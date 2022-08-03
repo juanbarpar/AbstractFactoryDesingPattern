@@ -1,6 +1,6 @@
 public class FisicoXbox implements CopiaFisica{
     @Override
     public String getInformacion() {
-        return null;
+        return "Disponible en tiendas Fisicas de Microsoft";
     }
 }

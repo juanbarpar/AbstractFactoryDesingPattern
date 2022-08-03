@@ -1,11 +1,14 @@
 public class DigitalXbox implements CopiaDigital{
     @Override
     public String getInformacion() {
-        return null;
+        return "Disponible en tiendas digitales y en la Microsoft Store";
     }
 
     @Override
     public String getClave() {
-        return "21367";
+
+        GeneradorDeClave generadorDeClave = new GeneradorDeClave();
+
+        return generadorDeClave.getPassword(5)+"-"+generadorDeClave.getPassword(5)+"-"+generadorDeClave.getPassword(5);
     }
 }

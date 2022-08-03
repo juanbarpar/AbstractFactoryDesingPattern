@@ -3,11 +3,14 @@ public class DigitalPlay implements CopiaDigital{
 
     @Override
     public String getInformacion() {
-        return null;
+        return "Disponible exclusivamente en la PS Store";
     }
 
     @Override
     public String getClave() {
-        return "QWERT";
+
+        GeneradorDeClave generadorDeClave = new GeneradorDeClave();
+
+        return generadorDeClave.getPassword(10);
     }
 }
